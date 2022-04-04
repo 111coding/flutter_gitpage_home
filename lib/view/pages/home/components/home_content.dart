@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gitpage_home/constants/size_config.dart';
 import 'package:flutter_gitpage_home/view/components/buttons/label_button.dart';
+import 'package:flutter_gitpage_home/view/pages/home/components/book_list.dart';
 
 class HomeContent extends StatelessWidget {
   const HomeContent({Key? key}) : super(key: key);
@@ -14,8 +15,11 @@ class HomeContent extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              eHeight(10),
+              eHeight(20),
               const LabelButton(label: "Books"),
+              eHeight(20),
+              const BookList(),
+              eHeight(40),
               const LabelButton(label: "Portfolio"),
             ],
           ),
