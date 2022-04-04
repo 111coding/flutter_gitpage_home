@@ -93,7 +93,7 @@ class NotoSansKr {
   static const popupMenuDisableText14R = _NotoSansKrStyle(fontSize: 14, fontWeight: FontWeight.w400, color: ColorPalette.popupMenuDisableText, height: 16.8);
 
   static const red18B = _NotoSansKrStyle(fontSize: 18, fontWeight: FontWeight.bold, color: ColorPalette.red, height: 16.8);
-  static const red18O70 = _NotoSansKrStyle(fontSize: 18, fontWeight: FontWeight.bold, color: ColorPalette.red70, height: 16.8);
+  static const red18BO70 = _NotoSansKrStyle(fontSize: 18, fontWeight: FontWeight.bold, color: ColorPalette.red70, height: 16.8);
 }
 
 class _NotoSansKrStyle extends TextStyle {

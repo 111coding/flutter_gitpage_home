@@ -26,7 +26,7 @@ class LabelButton extends StatelessWidget {
 
   // 우선순위 호버1 클릭2
   Color _iconColor(bool hover, bool click) => click ? ColorPalette.red70 : (hover ? ColorPalette.red : ColorPalette.white);
-  TextStyle _textStyle(bool hover, bool click) => click ? NotoSansKr.red18O70 : (hover ? NotoSansKr.red18B : NotoSansKr.white18B);
+  TextStyle _textStyle(bool hover, bool click) => click ? NotoSansKr.red18BO70 : (hover ? NotoSansKr.red18B : NotoSansKr.white18B);
 
   @override
   Widget build(BuildContext context) {
