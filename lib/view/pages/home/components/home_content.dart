@@ -20,6 +20,7 @@ class HomeContent extends StatelessWidget {
         constraints: const BoxConstraints(maxWidth: kMaxWidth),
         alignment: Alignment.topLeft,
         child: SingleChildScrollView(
+          physics: const ClampingScrollPhysics(),
           child: Column(
             children: [
               eHeight(20),

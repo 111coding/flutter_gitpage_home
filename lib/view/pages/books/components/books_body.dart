@@ -21,6 +21,7 @@ class BooksBody extends StatelessWidget {
             final itemHeight = itemWidth;
 
             return SingleChildScrollView(
+              physics: const ClampingScrollPhysics(),
               padding: const EdgeInsets.symmetric(vertical: 20),
               child: Wrap(
                 runSpacing: 10,
