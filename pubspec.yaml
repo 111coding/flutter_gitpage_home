@@ -1,0 +1,55 @@
+name: flutter_gitpage_home
+description: Flutter Gitpage Home
+
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  get: ^4.6.1 # GetX 상태관리, 다국어지원 등
+  intl: ^0.17.0 # 다국어지원(GetX로 다국어지원 사용할 예정, NumberFormat, DateFormat 유틸만 사용할 예정)
+  flutter_svg: ^1.0.3
+
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+      - assets/
+      - assets/img/
+      - assets/svg/
+
+
+  fonts:
+      - family: Noto_Sans_KR
+        fonts:
+          - asset: fonts/Noto_Sans_KR/NotoSansKR-Thin.otf
+            weight: 100
+          - asset: fonts/Noto_Sans_KR/NotoSansKR-Light.otf
+            weight: 300
+          - asset: fonts/Noto_Sans_KR/NotoSansKR-Regular.otf
+            weight: 400
+          - asset: fonts/Noto_Sans_KR/NotoSansKR-Medium.otf
+            weight: 500
+          - asset: fonts/Noto_Sans_KR/NotoSansKR-Bold.otf
+            weight: 700
+          - asset: fonts/Noto_Sans_KR/NotoSansKR-Black.otf
+            weight: 900
