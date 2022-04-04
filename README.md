@@ -1,5 +1,9 @@
 # flutter_gitpage_home
 
+## Relese 시 canvaskit으로 Build!(버벅임 없음)
+```
+flutter build web --web-renderer canvaskit --release
+```
 
 loading code(body 안에)
 ```html
