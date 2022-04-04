@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gitpage_home/constants/color_palette.dart';
-import 'package:flutter_gitpage_home/constants/font.dart';
+import 'package:flutter_gitpage_home/constants/size_config.dart';
+import 'package:flutter_gitpage_home/view/components/buttons/label_button.dart';
 
 class HomeContent extends StatelessWidget {
   const HomeContent({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: ColorPalette.black,
-      child: Column(
-        children: [
-          Text(
-            "Books",
-            style: NotoSansKr.white18B,
+    return Align(
+      child: Container(
+        constraints: const BoxConstraints(maxWidth: kMaxWidth),
+        alignment: Alignment.topLeft,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              eHeight(10),
+              const LabelButton(label: "Books"),
+              const LabelButton(label: "Portfolio"),
+            ],
           ),
-          Text(
-            "Portfolio",
-            style: NotoSansKr.white18B,
-          ),
-        ],
+        ),
       ),
     );
   }

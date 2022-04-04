@@ -20,7 +20,7 @@ const double kMainSliverMaxHeight = 430;
 const double kHorizontalPadding = 20;
 
 /// 반응형 시 너비 최대값
-const double kMaxWidth = 800;
+const double kMaxWidth = 1200;
 
 /// 탭바 높이
 const double kTabHeight = 40;

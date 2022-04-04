@@ -10,11 +10,20 @@ class ColorPalette {
   /// default text
   static const black = Color(0xFF141414);
 
-  /// default text
+  /// highlight
   static const red = Color(0xFFE9001F);
+
+  /// highlight Opacity 70%
+  static const red70 = Color(0xB3E9001F);
 
   /// white
   static const white = Color(0xFFFFFFFF);
+
+  /// white opacity 80%
+  static const white80 = Color(0xCCFFFFFF);
+
+  /// white opacity 60%
+  static const white60 = Color(0x99FFFFFF);
 
   /// white opacity 10%
   static const blackO10 = Color(0x1A000000);

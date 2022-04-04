@@ -37,6 +37,7 @@ enum SvgButtons {
   iconGit,
   iconYoutube,
   iconNaver,
+  arrow,
 }
 
 extension SvgButtonsExtension on SvgButtons {

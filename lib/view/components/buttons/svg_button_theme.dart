@@ -121,9 +121,9 @@ class SvgButtonThemes {
   );
 
   /// default
-  static final iconDefailt = SvgButtonTheme(
+  static const iconDefailt = SvgButtonTheme(
     defaultColor: ColorPalette.white,
-    hoverColor: ColorPalette.white.withOpacity(0.8),
-    clickColor: ColorPalette.white.withOpacity(0.6),
+    hoverColor: ColorPalette.white80,
+    clickColor: ColorPalette.white60,
   );
 }
