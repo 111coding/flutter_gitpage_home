@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gitpage_home/constants/size_config.dart';
+import 'package:flutter_gitpage_home/routes.dart';
 import 'package:flutter_gitpage_home/view/components/buttons/label_button.dart';
 import 'package:flutter_gitpage_home/view/pages/home/components/book_list.dart';
 
 class HomeContent extends StatelessWidget {
   const HomeContent({Key? key}) : super(key: key);
+
+  void _books() {
+    Routes.books.toNamed();
+  }
+
+  void _portfolio() {}
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +23,11 @@ class HomeContent extends StatelessWidget {
           child: Column(
             children: [
               eHeight(20),
-              const LabelButton(label: "Books"),
+              LabelButton(label: "Books", onClick: _books),
               eHeight(20),
               const BookList(),
               eHeight(40),
-              const LabelButton(label: "Portfolio"),
+              LabelButton(label: "Portfolio", onClick: _portfolio),
             ],
           ),
         ),

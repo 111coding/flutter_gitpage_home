@@ -4,14 +4,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gitpage_home/constants/color_palette.dart';
 import 'package:flutter_gitpage_home/constants/font.dart';
 import 'package:flutter_gitpage_home/constants/size_config.dart';
-import 'package:flutter_gitpage_home/view/components/buttons/svg_button.dart';
 import 'package:flutter_gitpage_home/view/components/buttons/svg_button_theme.dart';
 import 'package:flutter_gitpage_home/view/components/buttons/svg_buttons.dart';
 import 'package:flutter_gitpage_home/view/components/custom_sliver.dart';
-import 'package:flutter_svg/svg.dart';
+import 'dart:html' as html;
 
 class HomeSliverAppBar extends StatelessWidget {
   const HomeSliverAppBar({Key? key}) : super(key: key);
+
+  void _git() {
+    html.window.open("https://github.com/111coding", "git");
+  }
+
+  void _youtube() {
+    html.window.open("javascript:alert('준비중 입니다.')", "youtube");
+  }
+
+  void _naver() {
+    html.window.open("https://blog.naver.com/halowd", "naver");
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -115,11 +126,11 @@ class HomeSliverAppBar extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SvgButtons.iconGit.btn(size: iconSize, theme: SvgButtonThemes.iconDefailt),
+              SvgButtons.iconGit.btn(size: iconSize, theme: SvgButtonThemes.iconDefailt, onClick: _git),
               eWidth(4),
-              SvgButtons.iconYoutube.btn(size: iconSize * 0.85, theme: SvgButtonThemes.iconDefailt),
+              SvgButtons.iconYoutube.btn(size: iconSize * 0.85, theme: SvgButtonThemes.iconDefailt, onClick: _youtube),
               eWidth(4),
-              SvgButtons.iconNaver.btn(size: iconSize, theme: SvgButtonThemes.iconDefailt),
+              SvgButtons.iconNaver.btn(size: iconSize, theme: SvgButtonThemes.iconDefailt, onClick: _naver),
             ],
           ),
         ),

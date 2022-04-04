@@ -1,9 +1,8 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_gitpage_home/constants/color_palette.dart';
 import 'package:flutter_gitpage_home/model/book.dart';
 import 'package:flutter_gitpage_home/view/components/buttons/state_button.dart';
+import 'dart:html' as html;
 
 class BookListItem extends StatelessWidget {
   const BookListItem({
@@ -19,9 +18,14 @@ class BookListItem extends StatelessWidget {
 
   Color _borderColor(bool hover, bool click) => click ? ColorPalette.red70 : (hover ? ColorPalette.red : ColorPalette.disableText);
 
+  void _onClick() {
+    html.window.open(book.src, book.title);
+  }
+
   @override
   Widget build(BuildContext context) {
     return StateButton(
+      onClick: _onClick,
       builder: (context, isHover, isClick) {
         return Container(
           width: itemWidth,
