@@ -12,7 +12,7 @@ class BookList extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        final double itemWidth = min(constraints.maxWidth / 3, 300);
+        final double itemWidth = min(constraints.maxWidth / 2, 250);
         final itemHeight = itemWidth;
         return SizedBox(
           width: double.infinity,

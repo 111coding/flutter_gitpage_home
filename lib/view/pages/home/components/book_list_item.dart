@@ -35,11 +35,14 @@ class BookListItem extends StatelessWidget {
             children: [
               Align(
                 alignment: Alignment.centerRight,
-                child: Image.asset(
-                  book.imgSrc,
-                  width: itemWidth * 2 / 3,
-                  height: itemHeight,
-                  fit: BoxFit.fitHeight,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(4),
+                  child: Image.asset(
+                    book.imgSrc,
+                    width: itemWidth * 3 / 4,
+                    height: itemHeight,
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
               Align(

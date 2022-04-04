@@ -17,7 +17,7 @@ class BooksBody extends StatelessWidget {
         padding: const EdgeInsets.only(right: kHorizontalPadding),
         child: LayoutBuilder(
           builder: (context, constraints) {
-            final double itemWidth = min(constraints.maxWidth / 3, 300);
+            final double itemWidth = min(constraints.maxWidth / 2, 250);
             final itemHeight = itemWidth;
 
             return SingleChildScrollView(
