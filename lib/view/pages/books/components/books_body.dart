@@ -17,14 +17,15 @@ class BooksBody extends StatelessWidget {
         padding: const EdgeInsets.only(right: kHorizontalPadding),
         child: LayoutBuilder(
           builder: (context, constraints) {
-            final double itemWidth = min(constraints.maxWidth / 2, 250);
-            final itemHeight = itemWidth;
+            final double itemWidth = min(constraints.maxWidth / 2.5, 250);
+            final itemHeight = itemWidth * 1.2;
 
             return SingleChildScrollView(
               physics: const ClampingScrollPhysics(),
               padding: const EdgeInsets.symmetric(vertical: 20),
               child: Wrap(
-                runSpacing: 10,
+                spacing: itemWidth * 0.03,
+                runSpacing: itemWidth * 0.05,
                 children: DummyData.books.map((e) => BookListItem(book: e, itemWidth: itemWidth, itemHeight: itemHeight)).toList(),
               ),
             );

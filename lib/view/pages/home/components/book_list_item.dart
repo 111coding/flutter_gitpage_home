@@ -39,14 +39,14 @@ class BookListItem extends StatelessWidget {
                   borderRadius: BorderRadius.circular(4),
                   child: Image.asset(
                     book.imgSrc,
-                    width: itemWidth * 3 / 4,
+                    width: itemWidth * 5 / 6,
                     height: itemHeight,
                     fit: BoxFit.fill,
                   ),
                 ),
               ),
               Align(
-                alignment: Alignment.bottomCenter,
+                alignment: Alignment.centerLeft,
                 child: _text(isHover, isClick),
               ),
             ],
@@ -67,7 +67,7 @@ class BookListItem extends StatelessWidget {
       quarterTurns: 3,
       child: Container(
         width: itemHeight,
-        transform: Matrix4.translationValues(itemHeight * 0.02, -itemWidth * 0.3, 0),
+        // transform: Matrix4.translationValues(itemHeight * 0.02, -itemWidth * 0.3, 0),
         child: Stack(
           children: [
             Text(
